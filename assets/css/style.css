@@ -83,3 +83,76 @@ li button {
   height: 2em;
   border-radius: 30px;
 }
+
+.firstHalf {
+  margin-left: 4em;
+  margin-top: 2em;
+}
+
+.trendingContainer {
+  margin-left: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.trendingOnMedium .trendMed {
+  font-weight: 600;
+}
+
+.trendingOnMedium,
+.arrowTrend {
+  display: flex;
+  align-items: center;
+}
+
+.trendMed {
+  margin-left: 5px;
+  color: #191919;
+  opacity: 0.8;
+}
+
+.trendingTitle {
+  width: 280px;
+}
+
+.lowerHalf {
+  margin-left: 4em;
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+}
+
+.scrollNews {
+  max-width: 625px;
+}
+
+.footer {
+  margin-top: 4em;
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+}
+
+.discoverTopics {
+  max-width: 357.33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerLinks {
+  max-width: 357.33px;
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  max-width: 357.33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

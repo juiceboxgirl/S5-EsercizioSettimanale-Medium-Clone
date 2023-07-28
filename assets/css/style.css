@@ -118,9 +118,11 @@ li button {
 
 .lowerHalf {
   margin-left: 4em;
+  margin-right: 4em;
   margin-top: 6em;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .scrollNews {
@@ -144,15 +146,57 @@ li button {
   justify-content: space-between;
 }
 
-.footerLinks {
-  max-width: 357.33px;
+.footerLinks1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerLinks2 {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul .links {
   display: flex;
   flex-direction: row;
 }
 
-ul {
-  max-width: 357.33px;
+.trendingSection img {
+  max-width: 200px;
+}
+
+.trendingSection {
+  max-width: 413px;
+}
+.links li {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.discoverTopics p {
+  padding: 10px;
+}
+
+.discoverTitle {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.smallHeadline {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 600;
+}
+
+.lowerHalf .trendingSection .trendingTitle {
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.lowerHalf .trendingSection .trendingTitle p {
+  transform: scale(1, 0.95);
 }

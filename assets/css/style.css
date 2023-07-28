@@ -93,7 +93,15 @@ li button {
   margin-left: 2em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.headlinesContainer:nth-child(5) {
+  margin-left: -25px;
+}
+
+.firstHalf .trendingSection {
+  max-width: 335px;
 }
 
 .trendingOnMedium .trendMed {
@@ -112,8 +120,8 @@ li button {
   opacity: 0.8;
 }
 
-.trendingTitle {
-  width: 280px;
+.firstHalf .trendingContainer .trendingTitle {
+  max-width: 280px;
 }
 
 .lowerHalf {
@@ -168,7 +176,7 @@ ul .links {
   max-width: 200px;
 }
 
-.trendingSection {
+.lowerHalf .trendingSection {
   max-width: 413px;
 }
 .links li {
@@ -199,4 +207,8 @@ ul .links {
 
 .lowerHalf .trendingSection .trendingTitle p {
   transform: scale(1, 0.95);
+}
+
+.articlePreview {
+  max-width: 413px;
 }

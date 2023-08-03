@@ -2,24 +2,27 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   max-width: 1200px;
+  margin-inline: auto;
+}
+nav {
+  background-color: #ffc017;
+  padding: 1em;
+  border-bottom: 1px solid black;
 }
 
-header nav {
-  background-color: #ffc017;
+.navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em;
-  padding-left: 4em;
-  padding-right: 4em;
   align-items: center;
-  border-bottom: 1px solid black;
 }
 
 ul {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   font-size: 15px;
+  align-items: center;
 }
 
 li p {
@@ -32,7 +35,7 @@ li button {
   transform: scale(1, 0.9);
 }
 
-.getStarted button {
+.getStarted {
   display: flex;
   background-color: #191919;
   color: white;
@@ -41,20 +44,31 @@ li button {
   border-radius: 20px;
 }
 
-.mainHeadline {
-  background-color: #ffc017;
-  height: 380px;
-  padding-left: 4em;
-  padding-top: 5em;
-  border-bottom: 1px solid #191919;
+.navigation ul li p {
+  color: black;
 }
 
-.mainTitle {
-  width: 550px;
+.getStarted a:visited,
+.startReading a:visited {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: white;
+}
+
+.mainHeadline {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc017;
+  padding-left: 4em;
+  border-bottom: 1px solid #191919;
 }
 
 .mainTitle h1 {
@@ -66,11 +80,9 @@ li button {
 
 .mainTitle h3 {
   font-size: 25px;
-  transform: scale(1, 0.97);
-  color: #191919;
+  transform: scale(1, 0.92);
+  color: #242424;
   margin-top: 1em;
-}
-.mPic {
 }
 
 .startReading {
@@ -78,7 +90,8 @@ li button {
   width: 11em;
   background-color: #191919;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
   border: 0;
   height: 2em;
   border-radius: 30px;
@@ -89,39 +102,57 @@ li button {
   margin-top: 2em;
 }
 
-.trendingContainer {
-  margin-left: 2em;
+.trendingSection {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.trendingContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trendingContainer2 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.headlinesContainer:nth-child(5) {
-  margin-left: -25px;
-}
-
-.firstHalf .trendingSection {
-  max-width: 335px;
-}
-
-.trendingOnMedium .trendMed {
-  font-weight: 600;
-}
-
-.trendingOnMedium,
-.arrowTrend {
+.smallHeadline {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 12px;
 }
 
-.trendMed {
-  margin-left: 5px;
-  color: #191919;
-  opacity: 0.8;
+.smallHeadline img {
+  max-width: 20px;
+  margin-right: 1em;
+  border-radius: 30%;
 }
 
-.firstHalf .trendingContainer .trendingTitle {
-  max-width: 280px;
+.smallHeadline .img1,
+.smallHeadline .img2 {
+  border-radius: 50%;
+}
+
+.headlinesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trendingTitle {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.trendingNumber {
+  padding: 1em;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(221, 221, 221);
 }
 
 .lowerHalf {
@@ -172,10 +203,6 @@ ul .links {
   flex-direction: row;
 }
 
-.trendingSection img {
-  max-width: 200px;
-}
-
 .lowerHalf .trendingSection {
   max-width: 413px;
 }
@@ -194,8 +221,6 @@ ul .links {
 }
 
 .smallHeadline {
-  display: flex;
-  align-items: center;
   font-weight: 600;
 }
 

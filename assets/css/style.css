@@ -98,8 +98,10 @@ main {
 }
 
 .firstHalf {
-  margin-left: 4em;
-  margin-top: 2em;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
 }
 
 .trendingSection {
@@ -107,13 +109,11 @@ main {
   flex-direction: column;
 }
 
-.trendingContainer1 {
+.trendingContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.trendingContainer2 {
-  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: stretch;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -148,11 +148,41 @@ main {
   font-size: 15px;
 }
 
+.number5 {
+  margin-left: -43px;
+}
+
+.number6 {
+  margin-right: 7px;
+}
+
 .trendingNumber {
   padding: 1em;
   font-size: 25px;
   font-weight: 900;
   color: rgb(221, 221, 221);
+}
+
+.trendingOnMedium {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #191919;
+  margin-left: 2em;
+}
+
+.readingTime {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+
+.readingTime img {
+  margin-left: 3px;
+  width: 7%;
 }
 
 .lowerHalf {
@@ -203,7 +233,7 @@ ul .links {
   flex-direction: row;
 }
 
-.lowerHalf .trendingSection {
+.lowerHalf .trendingSection2 {
   max-width: 413px;
 }
 .links li {
@@ -224,13 +254,13 @@ ul .links {
   font-weight: 600;
 }
 
-.lowerHalf .trendingSection .trendingTitle {
+.lowerHalf .trendingSection2 .trendingTitle {
   margin-top: 1em;
   font-weight: 600;
   font-size: 25px;
 }
 
-.lowerHalf .trendingSection .trendingTitle p {
+.lowerHalf .trendingSection2 .trendingTitle p {
   transform: scale(1, 0.95);
 }
 

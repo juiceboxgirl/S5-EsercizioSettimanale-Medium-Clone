@@ -274,7 +274,9 @@ ul .links {
 
 .articlePreview {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
+  color: #767676;
+  margin-top: 5px;
 }
 
 .smallHeadline2 {
@@ -283,6 +285,7 @@ ul .links {
   align-items: center;
   font-weight: 700;
   font-size: 10px;
+  margin-bottom: -20px;
 }
 
 .smallHeadline2 img {
@@ -301,11 +304,26 @@ ul .links {
   flex-direction: column;
 }
 
-.container {
+.readingTime2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 2em;
+  font-size: 10px;
+  margin-top: 1em;
+  color: #767676;
+}
+
+.star {
+  max-width: 10%;
+  margin-left: 2px;
+}
+
+.containerLow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
 }
 
 .sideImg img {
@@ -313,4 +331,33 @@ ul .links {
   flex-direction: column;
   justify-content: center;
   max-width: 150px;
+}
+
+.exception {
+  font-weight: 400;
+  color: #767676;
+}
+
+.topic {
+  margin-left: 5px;
+  border-radius: 30px;
+  border-style: none;
+  padding: 6px;
+  color: #767676;
+}
+
+.asideBtn {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  color: #767676;
+}
+
+li a:visited {
+  color: #767676;
+}
+
+li a:link {
+  color: #767676;
 }

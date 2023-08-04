@@ -44,6 +44,10 @@ li button {
   border-radius: 20px;
 }
 
+.getStarted:hover {
+  background-color: #1a8917;
+}
+
 .navigation ul li p {
   color: black;
 }
@@ -95,6 +99,10 @@ main {
   border: 0;
   height: 2em;
   border-radius: 30px;
+}
+
+.startReading:hover {
+  background-color: #1a8917;
 }
 
 .firstHalf {
